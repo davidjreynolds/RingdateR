@@ -1,0 +1,2 @@
+# ringdater
+RingdateR crossdating application
