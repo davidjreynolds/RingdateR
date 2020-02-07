@@ -19,6 +19,12 @@ You can try the online version of RingdateR here: https://ringdater.shinyapps.io
 PLease note though, that we strongly recommend you download and run RingdateR locally if you decide to use it regularly. There is limited 
 access to the online version.
 
+Console Pairwise analysis mode .R Contains an R script that runs through crossdating undated series in RingdateR's Pairwise Analysis Mode without using the Shiny App.
+
+Console Chronology analysis mode .R Contains an R script that runs through crossdating undated series against an existing dated chronology in RingdateR's Chronology Analysis Mode without using the Shiny App.
+
+
+
 
 
 
