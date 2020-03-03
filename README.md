@@ -17,7 +17,7 @@ Use the "Package Archive" browser to find and select the ringdater_0.1.0.tar.gz 
 Click install.
 
 ## RingdateR online
-<a href="https://ringdater.shinyapps.io/launcher/."> You can try the online version of RingdateR here: </a href>
+<a href="https://ringdater.shinyapps.io/launcher/."> You can try the online version of RingdateR here: </a>
 P.ease note though, that we strongly recommend you download and run RingdateR locally if you decide to use it regularly. There is limited 
 access to the online version.
 
