@@ -1,7 +1,7 @@
-# RingdateR
-RingdateR: A statistical and graphical tool for crossdating.
+## About RingdateR
+RingdateR is a shiny based app for statistical and graphical crossdating of annually resolved timeseries (e.g. tree rings)
 
-Version: 0.1.0
+Latest Version: 0.1.0
 
 Date: 7/2/20
 
