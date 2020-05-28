@@ -1,3 +1,7 @@
+# RingdateR
+
+<a href="https://www.repostatus.org/#active"><img src="https://www.repostatus.org/badges/latest/active.svg" alt="Project Status: Active – The project has reached a stable, usable state and is being actively developed." /></a>
+
 ## About RingdateR
 RingdateR is a shiny based app for statistical and graphical crossdating of annually resolved timeseries (e.g. tree rings)
 
