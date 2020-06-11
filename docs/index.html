@@ -8,73 +8,55 @@
 </head>
 
 <body>
-<table width="800" border="0" cellpadding="1" bgcolor="#009458" align="center">
-  <tbody>
-    <tr>
-      <td align="center"><h1>RingdateR</h1>
-		<h2> A Statistical and Graphical Tool for Crossdating</h2></td>
-    </tr>
-  </tbody>
-</table>
+<div id="title">
+  <h1>RingdateR</h1>
+  <h2> A Statistical and Graphical Tool for Crossdating</h2>	
+</div>
 
-<table width="800" border="0" cellpadding="0" bgcolor="#D7D6D6" align="center">
-  <tbody>
-    <tr>
-      <td align="left">
-		 <ul>
-  <li><a href="index.html">Home</a></li>
-  <li><a href="about.html">About RingdateR</a></li>
-  <li><a href="help.html">Help files</a></li>
-  
-  
-</ul> 
-		</td>
-    </tr>
-  </tbody>
-</table>
+<div id="nav">  
+  <ul>
+			<li><a href="index.html">Home</a></li>
+			<li><a href="about.html">About RingdateR</a></li>
+			<li><a href="help.html">Help files</a></li>
+		</ul> 
+	</div>
 
-<table width="800" border="0" cellpadding="1" bgcolor="#FFFFFF" align="center">
-  <tbody>
-    <tr>
-		<td align="left"><h3> Thanks for checking out RingdateR.</h3>
-			<h4>RingdateR is still being tested, but feel free to try it out!</h4></td>
-    </tr>
-  </tbody>
-</table>
+	<p>RingdateR is a grpahical and statistical tool for crossdting annually resolved time series such as tree rings or molluc, coral and otolith growth increments. </p>
+	<p><strong>RingdateR is currently being tested and reviewed.</strong> Please feel free to download it or use the onine version. Please let us know if you notice issues or bugs, either by logging an issue with <a href="https://github.com/ringdater/ringdater_pkg/issues">Github</a> (Github account required), or by sending an email to davidreynolds@email.arizona.edu</p>
+	<hr align="center" width="800">
+	<h3>RRunning RingdateR online </h3>
+	<p>Use the link below to launch the online version of RingdateR. <b>Please note that we strongly recommend you download and run RingdateR in RStudio if you decide to use it regularly.</b> There is limited access to the online version and the online server will time out after 30 minutes of inactive use. Any analyses not downloaded will be lost if the server times out. There are no usage limits when using RingdateR in RStudio.</p>
+<div class="online">
+  <ul><li><a href="https://ringdater.shinyapps.io/launcher/"><b>Launch RingdateR online</b></a>
+  </li></ul>
+	</div>
+	
+	<hr align="center" width="800">
 		
-	<hr align="center" width="800">
-<table  border="0" cellpadding="2" align="center">
-  <tbody>
-    <tr>
-      <td align="center" width="200">
-		  <ul><li><a href="ringdater_0.1.0.tar.gz"><b>Download RingdateR for R</b></a></li></ul> 
-		</td>
-		<td width="150"></td>
-      <td align="center" width="200">
-		  <ul><li><a href="https://ringdater.shinyapps.io/launcher/"><b>Launch RingdateR online</b></a></li></ul> 
-		</td>
-		
-    </tr>
-  </tbody>
-</table>
-	<hr align="center" width="800">
-<table width="800" border="0" cellpadding="2" align="center">
-  <tbody>
-    <tr>
-      <td>
-		  <h3>Running RingdateR in Rstudio </h3>
 
-		<p>To use RingdateR in Rstudio, download the ringdater_0.1.0.tar.gz file. In Rstudio, on the package tab, click install packages. Change the "Install From" option from "Repository (CRAN)" to "Package Archive File (.tgz, .tar.gz)". Use the "Package Archive" browser to find and select the ringdater_0.1.0.tar.gz file you just downloaded. Click install.</p></td>
-    </tr>
-    <tr>
-      <td><h3>RRunning RingdateR online </h3>
-		<p>Use the link above to launch the online version of RingdateR. Please note though, that we strongly recommend you download and run RingdateR locally if you decide to use it regularly. There is limited access to the online version.</p></td>
-    </tr>
-  </tbody>
-</table>
+	<h3>Running RingdateR in Rstudio </h3>
+
+<p>RingdateR can be used as a package in Rstudio. The package can be downloaded and installed directly from Github using the following code:</p>
+	<p>install.packages("devtools")&nbsp;</p>
+	<p> library(devtools)</p>
+	<p> devtools::install_github("ringdater/ringdater_pkg") </p>
+<p><strong>Requirements</strong></p>
+	<p>RingdateR requires R version 4.0. There are also a number of dependencies, listed in the help file, that will automatically install when the RingdateR package is first installed. If you are currently using an older version of R, you can automatically install the latest version using the following code: </p>
+	
+<p> install.packages("installr") </p>
+	<p>library(installr) </p>
+	<p>updateR() </p>
+
+	<h3>Starting RingdateR</h3>   
+	<p>Once the RingdateR package is installed, use the following code to launch the RingdateR app:</p>
+	<p>library(ringdater)</p>
+	<p>run_ringdater()</p>
+	
+	
+	
 	<hr align="center" width="800">
-<footer class="logos"><table width="800" border="0" cellpadding="2" align="center">
-  <tbody>
+	<footer class="logos"><table width="800" border="0" cellpadding="2" align="center">
+  	<tbody>
     <tr>
       <td align="center" valign="middle">  
 		  <img src="images/LTRR logo.jpg" height="94" alt=""/>

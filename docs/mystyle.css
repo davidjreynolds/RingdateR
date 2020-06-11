@@ -3,52 +3,82 @@
 
 body { 
 	background-color: #FFFFFF;
+	width:800px;
+	margin: auto;
 	}
 
 h1 {color:#FFFFFF;
-	font-family: Gotham, "Helvetica Neue", Helvetica, Arial, "sans-serif";}
+	font-family: Gotham, "Helvetica Neue", Helvetica, Arial, "sans-serif";
+}
 h2 {color:#FFFFFF;
-	font-family: Gotham, "Helvetica Neue", Helvetica, Arial, "sans-serif";}
+	font-family: Gotham, "Helvetica Neue", Helvetica, Arial, "sans-serif";
+}
 h3 {color:#000000;
-	font-family: Gotham, "Helvetica Neue", Helvetica, Arial, "sans-serif";}
+	font-family: Gotham, "Helvetica Neue", Helvetica, Arial, "sans-serif";
+}
 h4 {color:#000000;
-	font-family: Gotham, "Helvetica Neue", Helvetica, Arial, "sans-serif";}
+	font-family: Gotham, "Helvetica Neue", Helvetica, Arial, "sans-serif";
+}
 h5 {color:#000000;
-	font-family: Gotham, "Helvetica Neue", Helvetica, Arial, "sans-serif";}
+	font-family: Gotham, "Helvetica Neue", Helvetica, Arial, "sans-serif";
+}
 h6 {color:#000000;
-	font-family: Gotham, "Helvetica Neue", Helvetica, Arial, "sans-serif";}
+	font-family: Gotham, "Helvetica Neue", Helvetica, Arial, "sans-serif";
+}
 p {color:#000000;
-	font-family: Gotham, "Helvetica Neue", Helvetica, Arial, "sans-serif";}
-
-ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
-  background-color: #555;
- 	
- 
+	font-family: Gotham, "Helvetica Neue", Helvetica, Arial, "sans-serif";
 }
 
+#title{
+ 	background: #009458;
+	border-radius: 5px;
+	text-align: center;
+	padding: 10px;
+}
+
+#nav{
+	background: #555;
+	border-radius: 5px;
+}
+
+.online{
+	display: inline-block;
+	width: 200px;
+	text-align:center;
+	align-content: center;
+	margin: 0 auto;
+	border-radius: 10px;
+	
+}
+
+ul {
+	width:auto;	
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+	background-color: #555;
+ }
+
 li {
-  float: left;
+	float: left;
 	border-right: 1px solid #bbb;
 }
 
 li a {
-  display: block;
-  color: white;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-  font-family: Gotham, "Helvetica Neue", Helvetica, Arial, "sans-serif";
+	display: block;
+	color: white;
+	text-align: center;
+	padding: 14px 16px;
+	text-decoration: none;
+	font-family: Gotham, "Helvetica Neue", Helvetica, Arial, "sans-serif";
 }
 
 /* Change the link color to #111 (black) on hover */
 li a:hover {
-  background-color: #111;
+	background-color: #111;
 }
 .active {
-  background-color: #4CAF50;
+	background-color: #4CAF50;
 }
 
