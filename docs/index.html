@@ -10,15 +10,15 @@
 <body>
 <div id="title">
   <h1>RingdateR</h1>
-  <h2> A Statistical and Graphical Tool for Crossdating</h2>	
+  <h2> A Statistical and Graphical Tool for Crossdating</h2>
 </div>
 
-<div id="nav">  
+<div id="nav">
   <ul>
 			<li><a href="index.html">Home</a></li>
 			<li><a href="about.html">About RingdateR</a></li>
 			<li><a href="help.html">Help files</a></li>
-		</ul> 
+		</ul>
 	</div>
 
 	<p>RingdateR is a grpahical and statistical tool for crossdting annually resolved time series such as tree rings or molluc, coral and otolith growth increments. </p>
@@ -29,36 +29,78 @@
 <div class="online">
   <ul><li><a href="https://ringdater.shinyapps.io/launcher/"><b>Launch RingdateR online</b></a>
   </li></ul>
-	</div>
-	
+</div>
+
 	<hr align="center" width="800">
-		
 
-	<h3>Running RingdateR in Rstudio </h3>
 
-<p>RingdateR can be used as a package in Rstudio. The package can be downloaded and installed directly from Github using the following code:</p>
+	<h3>Running RingdateR on your computer </h3>
+
+  <p> There are currently a couple of ways to run RingdateR on your own compute,
+    either use the standalone version or run it using RStudio. </p>
+
+  <h3> RingdateR Stnadalone (Windows only)</h3>
+
+  <div class="online">
+    <ul><li><a href="https://drive.google.com/uc?export=download&id=1HQ8J7PS3_DzUwPCGha_EGIvIb02KCNDm">
+      <b>Download RingdateR standalone</b></a>
+    </li></ul>
+  </div>
+
+  <p> If you're a windows user, the standalone version of RingdateR will allow you to use
+    RingdateR without needing to do anything with R. Simply download the zip file from our google
+    drive using the link above. Unzip the folder and run the setup_ringdater installation wizard.
+
+    Once installed, RingdateR can then be launched from the desktop shortcut or by from the Start
+    program menu. On first launch, RingdateR installs all the dependencies needed (included in the
+    download) automatically
+   </p>
+
+  <p><b> Note the standalone installer is currently in beta form. Please get in touch if
+    you encounter problems </b></p>
+
+  <p> After launch you can modify the appearance of RingdateR usingthe ctrl + and ctrl - to
+    scale the display to your screen. Additionally text sizes can be modified usingthe toggelable
+    menu on the left of the screen. </p>
+
+  <h3> RingdateR in R studio </h3>
+  <p>RingdateR can be installed as a package in Rstudio.
+  The package can be downloaded and installed directly from Github using the following code:</p>
 	<p>install.packages("devtools")&nbsp;</p>
 	<p> library(devtools)</p>
 	<p> devtools::install_github("ringdater/ringdater_pkg") </p>
 <p><strong>Requirements</strong></p>
 	<p>RingdateR requires R version 4.0. There are also a number of dependencies, listed in the help file, that will automatically install when the RingdateR package is first installed. If you are currently using an older version of R, you can automatically install the latest version using the following code: </p>
-	
+
 <p> install.packages("installr") </p>
 	<p>library(installr) </p>
 	<p>updateR() </p>
 
-	<h3>Starting RingdateR</h3>   
+  <h3> Alternative RStudio use </h3>
+  <p> If you encounter issues installing RingdateR from Github, you can also download the
+    scripts to run RingdateR here. </p>
+
+  <div class="online">
+      <ul><li><a href="https://ringdater.github.io/ringdater/RingdateR_app_only.zip">
+        <b>Download RingdateR script</b></a>
+      </li></ul>
+  </div>
+
+  <p> Once downloaded, unzip the folder and open run_me.R in RStudio.
+  Rstudio will detect the script is for an app, so simply click the Run App button that
+  appears in the top right corner of the script window. RingdateR will launch in your
+  default web browser.</p>
+
+	<h3>Starting RingdateR</h3>
 	<p>Once the RingdateR package is installed, use the following code to launch the RingdateR app:</p>
 	<p>library(ringdater)</p>
 	<p>run_ringdater()</p>
-	
-	
-	
+
 	<hr align="center" width="800">
 	<footer class="logos"><table width="800" border="0" cellpadding="2" align="center">
   	<tbody>
     <tr>
-      <td align="center" valign="middle">  
+      <td align="center" valign="middle">
 		  <img src="images/LTRR logo.jpg" height="94" alt=""/>
 		  <img src="images/UA-Logo.jpg"  height="120" alt=""/>
 	  </td>
