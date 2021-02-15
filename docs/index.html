@@ -76,6 +76,19 @@
 	<p>install.packages("devtools")&nbsp;</p>
 	<p> library(devtools)</p>
 	<p> devtools::install_github("ringdater/ringdater_pkg") </p>
+
+  <p> <b>Note: </b>Devtools and all dependencies should be up to date (Devtools current version is 2.3.2).
+    RTools <a href="https://cran.r-project.org/bin/windows/Rtools/">version 4.0 </a>is also required.
+
+    I have found that if Devtools dependencies require updating, the updates should be done prior to using the
+    install_github function. Whilst the install_github function does provide users with an option to install these
+    updates whilst installing RingdateR, I have found it nearly always fails to install all the updates.
+    If the Devtools updates fail, the installation of RingdateR will also fail.
+  </p>
+
+  <p> If you have problems installing from Github, the Simple script launch instructions below proivde a simpler
+    way to run RingdateR in RStudio</p>
+
 <p><strong>Requirements</strong></p>
 	<p>RingdateR requires R version 4.0. There are also a number of dependencies, listed in the help file, that will automatically install when the RingdateR package is first installed. If you are currently using an older version of R, you can automatically install the latest version using the following code: </p>
 
@@ -90,7 +103,7 @@
 
   <hr align="center" width="800">
 
-  <h3> Alternative RStudio start - a simple script launch</h3>
+  <h3> RingdateR Simple script launch for RStudio</h3>
   <p> Insted of using the RingdateR package from Github, alternatively, you can download the functions
    and run the associated script to launch RingdateR without needing to install the package.
   This approach does still require the installation of dependencies. These
