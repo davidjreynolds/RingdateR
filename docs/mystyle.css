@@ -1,7 +1,7 @@
 @charset "UTF-8";
 /* CSS Document */
 
-body { 
+body {
 	background-color: #FFFFFF;
 	width:800px;
 	margin: auto;
@@ -43,16 +43,16 @@ p {color:#000000;
 
 .online{
 	display: inline-block;
-	width: 200px;
+	width: 150px;
 	text-align:center;
 	align-content: center;
 	margin: 0 auto;
 	border-radius: 10px;
-	
+
 }
 
 ul {
-	width:auto;	
+	width:auto;
 	list-style-type: none;
 	margin: 0;
 	padding: 0;
@@ -81,4 +81,3 @@ li a:hover {
 .active {
 	background-color: #4CAF50;
 }
-
