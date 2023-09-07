@@ -1,7 +1,8 @@
 <!DOCTYPE html>
-// Note this is not to do with RingdateR just hosting the file here.
 <html lang="en">
 <head>
+  // Note this is not to do with RingdateR just hosting the file here.
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>University of Exeter Sclerochronology Group Database Search</title>
@@ -9,16 +10,53 @@
 <body>
     <script>
         // Get the query parameters from the URL
-        const queryParams = new URLSearchParams(window.location.search);
+        let queryParams = new URLSearchParams(window.location.search);
 
         // Extract the values
-        const boxID = queryParams.get('qboxID');
-        const sampleID = queryParams.get('qsampleID');
+        let boxID = queryParams.get('qboxID');
+        let sampleID = queryParams.get('qsampleID');
+
+        async function fetchAsync() {
+      // Replace {spreadsheetId} and {range} with your actual values
+
+            let spreadsheetId = "1sDnEcLRY7zfiLRi7mf269aRhjG7itlIx4EKu0euJ1rc";
+            let range = "test";
+
+            // Replace "YOUR_API_KEY" with your actual API key
+            let apiKey = "AIzaSyBScQYj51jAodXy_6y5F-b9WWbLPQkG62k";
+
+            let url = `https://sheets.googleapis.com/v4/spreadsheets/${spreadsheetId}/values/${range}?majorDimension=COLUMNS&key=${apiKey}`;
+
+            let response = await fetch(url);
+            let data = await response.json();
+            let DB = data.values
+            return(data.values)
+            //console.log(DB)
+        }
+
+        let boxdata = fetchAsync()
+
+        .then(boxdata => {
+            boxdata = boxdata[boxID-1]
+            console.log(boxdata); // You can now access the data array here
+
+            boxdata.shift()
+
+            document.write('<h1>Sclero sample box database :</h1>');
+            document.write('<p>boxID: ' + boxID + '</p>');
+            document.write('<p>Box contents: </p>');
+            for (let i = 0; i < boxdata.length; i++) {
+              //document.write('<br></br>')
+              document.write('<p>' + boxdata[i] + '</p>');;
+            }
+
+        })
+
+        ///console.log(boxdata)
 
         // Use the data as needed
-        document.write('<h1>Data from QR Code:</h1>');
-        document.write('<p>boxID: ' + boxID + '</p>');
-        document.write('<p>sampleID: ' + sampleID + '</p>');
+
+
     </script>
 </body>
 </html>
