@@ -89,7 +89,23 @@
   <p> If you have problems installing from Github, the Simple script launch instructions below proivde a simpler
     way to run RingdateR in RStudio</p>
 
-<p><strong>Requirements</strong></p>
+    <p><b> Development Version of RingdateR - Experimental</b></p>
+
+    <p>The development version of RingdateR includes updates, bug fixes, and extra compatability for the Ring 
+      Measurer App. This vesion is available for install from GitHub using the following code:</p>
+
+    <p> library(devtools)</p>
+    <p> devtools::install_github("ringdater/RingdateR_dev_build", INSTALL_opts=c("--no-multiarch")) </p>
+
+    <p><b>New features/bug fixes</b></p>
+    <p>Fixed the bug that required morethan one undated sample to be loaded when comparing to a chronology</p>
+    <p>Undated samples can now have arbitrary dates applied rahter than using ontogenetic age. This makes it 
+      easier when comparing dead samples against live samples.</p>
+    <p>Can now download the detrended undated data without having to analyse it first. This is useful if you want
+       some detrended data for other analysis outside of RingdateR.</p>
+    <p>Added compatability with the Ring Measurer App (Ring Measurer is being prepared for submission to be be published).</p>   
+
+    <p><strong>Requirements</strong></p>
 	<p>RingdateR requires R version 4.0. There are also a number of dependencies, listed in the help file, that will automatically install when the RingdateR package is first installed. If you are currently using an older version of R, you can automatically install the latest version using the following code: </p>
 
 <p> install.packages("installr") </p>
